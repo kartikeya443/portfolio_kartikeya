@@ -7,8 +7,39 @@
     <title>Kartikeya's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <!-- LOADER -->
+    <div id="splash">
+        <div class="anim">
+          <div id="loader">
+            <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+              <defs>
+                <filter id="f1" x="0" y="0">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                </filter>
+              </defs>
+              <g id="airplane">
+                <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+              </g>
+              <g id="shadow" transform="scale(.9)">
+                <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                    h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                    c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                    c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                    c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                    C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)" filter="url(#f1)" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
 </head>
 <body>
+    <!-- NAVIGATION -->
     <nav id="desktop-nav">
         <div class="logo">Kartikeya Acharya</div>
         <div>
@@ -36,6 +67,7 @@
             </div>
         </div>
     </nav>
+    <!-- SECTIONS -->
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Kartikeya Acharya profile picture">
@@ -43,18 +75,16 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Kartikeya Acharya</h1>
-            <p class="section__text__p2">Polymath</p>
+            <p class="section__text__p2">Engineering Undergrad</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                Download CV
-            </button>
-            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                <button class="btn btn-color-2" onclick="window.open('_blank')">Résumé</button>
+            <button class="btn btn-color-1" onclick="window.open('./#contact'">
                 Contact
             </button>
             </div>
             <div id="social-container">
-                <img src="/assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kartikeya443/'"/>
-                <img src="/assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/kartikeya443'"/>
+                <img src="/assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/kartikeya443/', '_blank')"/>
+                <img src="/assets/github.png" alt="My GitHub profile" class="icon" onclick="window.open('https://github.com/kartikeya443', '_blank')"/>
             </div>
         </div>
     </section>
@@ -70,7 +100,7 @@
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
                         <h3>Experience</h3>
-                        <p>1+ Years <br/>Polymath</p>
+                        <p>Web Developement<br/>Data Engineering</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education Icon" class="icon"/>
@@ -79,11 +109,11 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque veniam ad beatae. Molestiae, esse fugit quasi repellendus cumque, sed, alias laudantium iure quaerat et ullam. Ratione ullam aliquam laboriosam eaque voluptatum doloribus iure itaque nisi asperiores voluptate quis, voluptas est, odio non id magni sit tempora? Impedit alias magni perferendis.</p>
+                    <p>I am a dedicated learner and ambitious student, known for my multifaceted talents. I am relentless in my pursuit of knowledge and committed to excellence across various disciplines. My passion drives me towards a promising future in engineering and beyond.</p>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#experience'"/>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="window.open('./#experience'"/>
     </section>
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
@@ -96,43 +126,43 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
+                                <h3>C/C++</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
+                                <h3>Python</h3>
                                 <p>Experienced</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>DSA</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Git/GitHub</h3>
+                                <p>Exploring</p>
                             </div>
                         </article>
                     </div>
@@ -143,50 +173,36 @@
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Productivity</h3>
+                                <!-- <p>Experienced</p> -->
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Leadership</h3>
+                                <!-- <p>Experienced</p> -->
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Financing</h3>
+                                <!-- <p>Experienced</p> -->
                             </div>
                         </article>
                         <article>
                             <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
                             <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark" class="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
+                                <h3>Polymath</h3>
+                                <!-- <p>Experienced</p> -->
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#projects'"/>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="window.open('./#projects'"/>
     </section>
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
@@ -199,8 +215,8 @@
                     </div>
                     <h2 class="experience-subtitle project-title">Project One</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">Live Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -209,8 +225,8 @@
                     </div>
                     <h2 class="experience-subtitle project-title">Project Two</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">Live Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -219,13 +235,13 @@
                     </div>
                     <h2 class="experience-subtitle project-title">Project Three</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/', '_blank')">Live Demo</button>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="location.href='./#contact'"/>
+        <img src="./assets/arrow.png" alt="Arrow" class="icon arrow" onclick="window.open('./#contact'"/>
     </section>
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
@@ -237,7 +253,7 @@
             </div>
             <div class="contact-info-container">
                 <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/kartikeya443/">LinkedIn</a></p>
+                <p><a href="https://www.linkedin.com/in/kartikeya443/" target="_blank">LinkedIn</a></p>
             </div>
         </div>
     </section>
@@ -257,4 +273,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
